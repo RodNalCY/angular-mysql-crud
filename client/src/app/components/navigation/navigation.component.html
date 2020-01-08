@@ -1,5 +1,6 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">NG-Mysql CRUD</a>
+<div class="container">
+  <a class="navbar-brand" routerLink="/">NG-Mysql CRUD</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,10 +8,14 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/games" routerLinkActive="active">
+          <i class="fas fa-gamepad"></i>
+          Games</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" routerLink="/games/add" routerLinkActive="active">
+          <i class="fas fa-plus-circle"></i>
+          Add Games</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -18,4 +23,5 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
+</div>
 </nav>
